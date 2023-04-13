@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
-
 /* Reset CSS */
 * {
     margin: 0;
@@ -15,8 +14,6 @@ a {
     text-decoration: none;
 }
 
-
-
 /* Header */
 h1 {
     position: absolute;
@@ -26,12 +23,9 @@ h1 {
     left: 700px;
 }
 
-header {
-    background-color: #f9f9fa;
-}
-
 .header__top {
     display: flex;
+    height: 8vw
 }
 
 .header__top .header__logo img {
@@ -44,11 +38,13 @@ header {
     height: 8vw;
 }
 
-
-
-/* Menu */ 
+/* Menu */
 nav {
     display: flex;
+}
+
+.nav__top {
+    background-color: #f9f9fa;
 }
 
 nav > ul {
@@ -60,6 +56,12 @@ nav ul li {
     height: 100%;
     position: relative;
     list-style: none;
+}
+
+nav > ul > li {
+    top: vw;
+    display: flex;
+    justify-content: center;
 }
 
 nav > ul > li > a {
@@ -80,8 +82,6 @@ nav > ul > li > a:hover {
     padding: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
-
-
 
 /* Submenu */
 .sub-menu {
@@ -140,7 +140,73 @@ nav ul li ul li a:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* Icon display:none */
+.icon__menu {
+    display: none;
+}
 
+#check__menu {
+    display: none;
+}
+
+/* Media Queries para Header - Nav */
+@media screen and (max-width: 720px) {
+
+    nav > ul {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0;
+    }
+
+    nav > ul > li > ul {
+        left: 90px;
+    }
+
+    nav > ul > li:hover ul {
+        top: 84px;
+    }
+    
+    .icon__menu {
+        display: flex;
+        align-items: center;
+        font-size: 4.5vw;
+        color: #00584d;
+        cursor: pointer;
+        padding-top: 50%;
+        padding-left: 50%;
+    }
+    
+    #label__check {
+        width: 76px;
+        height: 100%;
+        display: none;
+    }
+    
+    #check__menu {
+        display: none;
+    }
+
+    #label__check {
+        display: block;
+    }
+    
+    #icon__menu {
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul {
+        height: 350px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
 /* Banners */
 .banner {
@@ -151,14 +217,14 @@ nav ul li ul li a:hover {
 .banner .banner__argentina .banner__img--argentina {
     display: flex;
     width: 34vw;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-right: -5vw;
 }
 
 .banner .banner__brasil .banner__img--brasil {
     display: flex;
     width: 34vw;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: -5vw;
 }
 
@@ -173,25 +239,31 @@ nav ul li ul li a:hover {
 
 
 /* Sections */
+
+.section__argentina {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 .section__img--puerto--iguazu {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 .section__img--jujuy {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 .section__img--porto--de--galinhas {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
 
-/* Footer */
-footer {
-    background-color: #eeeeee;
-}
+
+
+
 
 
 
@@ -221,7 +293,7 @@ footer {
 }
   
 .slider {
-    width: 40%;
+    width: 50%;
     height: 70px;
     margin: auto;
     overflow: hidden;
@@ -254,6 +326,11 @@ footer {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-200%);
+      transform: translateX(-500%);
     }
+}
+
+/* Footer */
+footer {
+    background-color: #eeeeee;
 }
