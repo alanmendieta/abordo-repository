@@ -25,17 +25,17 @@ h1 {
 
 .header__top {
     display: flex;
-    height: 8vw
+    height: 9vw
 }
 
 .header__top .header__logo img {
-    width: 11vw;
+    width: 12.4vw;
     height: 100%;
 }
 
 .header__top .header__banner img {
     width: 100%;
-    height: 8vw;
+    height: 9vw;
 }
 
 /* Menu */
@@ -45,10 +45,12 @@ nav {
 
 .nav__top {
     background-color: #f9f9fa;
+    width: 100%;
+    height: 100%;
 }
 
 nav > ul {
-    height: 100%;
+    height: 100px;
     display: flex;
 }
 
@@ -59,7 +61,6 @@ nav ul li {
 }
 
 nav > ul > li {
-    top: vw;
     display: flex;
     justify-content: center;
 }
@@ -72,8 +73,16 @@ nav > ul > li > a {
     text-transform: uppercase;
     padding: 30px;
     transition: all 300ms ease;
-    font-size: medium;
+    font-size: 1rem;
     color: #00584d;
+}
+
+/* Eliminar todo efecto de boton Home */
+nav > ul > li:first-child a:hover {
+    transition: none;
+    box-shadow: none;
+    transform: none;
+    background-color: #f9f9fa;
 }
 
 nav > ul > li > a:hover {
@@ -170,7 +179,7 @@ nav ul li ul li a:hover {
     }
 
     nav > ul > li:hover ul {
-        top: 84px;
+        top: 75px;
     }
     
     .icon__menu {
@@ -208,6 +217,24 @@ nav ul li ul li a:hover {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Banners */
 .banner {
     display: flex;
@@ -216,16 +243,18 @@ nav ul li ul li a:hover {
 
 .banner .banner__argentina .banner__img--argentina {
     display: flex;
-    width: 34vw;
+    width: 40vw;
     margin-top: 30px;
     margin-right: -5vw;
+    margin-bottom: 2vw;
 }
 
 .banner .banner__brasil .banner__img--brasil {
     display: flex;
-    width: 34vw;
+    width: 40vw;
     margin-top: 30px;
     margin-left: -5vw;
+    margin-bottom: 2vw;
 }
 
 .banner a figure img {
@@ -237,8 +266,22 @@ nav ul li ul li a:hover {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
 }
 
+/* Frase disruptiva */
+
+.phrase__disruptive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5vw;
+}
+
 
 /* Sections */
+
+.sections__main {
+    width: 500px;
+    height: 100%;
+}
 
 .section__argentina {
     display: flex;
@@ -296,6 +339,8 @@ nav ul li ul li a:hover {
     width: 50%;
     height: 70px;
     margin: auto;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
     overflow: hidden;
     position: relative;
     border-radius: 35px;
@@ -326,7 +371,19 @@ nav ul li ul li a:hover {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-500%);
+      transform: translateX(-250%);
+    }
+}
+
+/* Media Queries para slider*/
+@media screen and (max-width:720px) {
+
+    .slider {
+        display: none;
+    }
+
+    .phrase__recomendation {
+        display: none;
     }
 }
 
