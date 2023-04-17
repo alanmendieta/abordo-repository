@@ -25,17 +25,17 @@ h1 {
 
 .header__top {
     display: flex;
-    height: 9vw
+    height: 10vw
 }
 
 .header__top .header__logo img {
-    width: 12.4vw;
+    width: 13.8vw;
     height: 100%;
 }
 
 .header__top .header__banner img {
     width: 100%;
-    height: 9vw;
+    height: 10vw;
 }
 
 /* Menu */
@@ -161,6 +161,24 @@ nav ul li ul li a:hover {
 /* Media Queries para Header - Nav */
 @media screen and (max-width: 720px) {
 
+    .header__top {
+       width: 100%;
+       height: 12vw;
+    }
+    
+    .header__top .header__logo img {
+        width: 16.5vw;
+        height: 100%;
+    }
+
+    .header__top .header__banner img {
+        height: 12vw;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
     nav > ul {
         flex-direction: column;
         top: 0;
@@ -244,7 +262,7 @@ nav ul li ul li a:hover {
 .banner .banner__argentina .banner__img--argentina {
     display: flex;
     width: 40vw;
-    margin-top: 30px;
+    margin-top: 4vw;
     margin-right: -5vw;
     margin-bottom: 2vw;
 }
@@ -252,9 +270,9 @@ nav ul li ul li a:hover {
 .banner .banner__brasil .banner__img--brasil {
     display: flex;
     width: 40vw;
-    margin-top: 30px;
+    margin-top: 4vw;
     margin-left: -5vw;
-    margin-bottom: 2vw;
+    margin-bottom: 2vw; 
 }
 
 .banner a figure img {
@@ -273,8 +291,9 @@ nav ul li ul li a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 1.5vw;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
-
 
 /* Sections */
 
