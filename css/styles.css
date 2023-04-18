@@ -14,6 +14,8 @@ a {
     text-decoration: none;
 }
 
+/* Inicio index.html */
+
 /* Header */
 h1 {
     position: absolute;
@@ -206,9 +208,9 @@ nav ul li ul li a:hover {
         font-size: 4.5vw;
         color: #00584d;
         cursor: pointer;
-        padding-top: 50%;
+        padding-top: 0.8vw;
         padding-left: 50%;
-        margin-top: 50%;
+        margin-top: 2vw;
     }
     
     #label__check {
@@ -264,6 +266,38 @@ nav ul li ul li a:hover {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
 }
 
+/* Media Queries para Banner */
+@media screen and (max-width: 720px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner .banner__argentina .banner__img--argentina {
+        display: flex;
+        width: 80vw;
+        margin-left: 0vw;
+        margin-bottom: 0vw;
+    }
+
+    .banner .banner__brasil .banner__img--brasil {
+        display: flex;
+        width: 80vw;
+        margin-left: 5vw;
+        margin-bottom: 0vw;
+    }
+
+    .banner a figure img {
+        transition: 50ms;
+    }
+
+    .banner a figure img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+    }
+}
+
 /* Frase disruptiva */
 .phrase__disruptive {
     display: flex;
@@ -281,28 +315,33 @@ nav ul li ul li a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 0.5vw;
-        font-size: 1.2rem;
+        margin-top: 4vw;
+        font-size: 3vw;
         font-weight: 300;
     }
 }
 
 /* Sections */
-
 .sections__main {
     margin-top: 33px;
     display: flex;
+    justify-content: space-between;
 }
 
 section > div > a > h2 {
     display: flex;
     justify-content: center;
+    font-size: 2.6vw;
+}
+
+.section__text {
+    width: 100%;
+    font-size: 1.2vw;
 }
 
 .section__argentina {
     margin: 0.5vw;
     transition: all 150ms ease;
-    border-radius: 25px;
 }
 
 .section__argentina:hover {
@@ -336,7 +375,43 @@ section > div > a > h2 {
 }
 
 /* Media Queries para Section */
+@media screen and (max-width: 720px) {
+    
+    .sections__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10vw;
+    }
 
+    .section__text {
+        width: 100%;
+        font-size: 2.3vw;
+    }
+
+    .section__argentina {
+        width: 75%;
+    }
+
+    .section__brasil {
+        width: 75%;
+    }
+
+    .section__img--puerto--iguazu {
+        width: 100%;
+        height: 45vw;
+    }
+
+    .section__img--porto--de--galinhas {
+        width: 100%;
+        height: 45vw;
+    }
+
+    .section__img--jujuy {
+        width: 100%;
+        height: 45vw;
+    }
+}
 
 .phrase__recomendation {
     display: flex;
@@ -451,3 +526,5 @@ footer {
     width: 300px;
     height: 100%;
 }
+
+/* Fin index.html*/
