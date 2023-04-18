@@ -326,17 +326,18 @@ nav ul li ul li a:hover {
     margin-top: 33px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 section > div > a > h2 {
     display: flex;
     justify-content: center;
-    font-size: 2.6vw;
+    font-size: 2vw;
 }
 
 .section__text {
     width: 100%;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 .section__argentina {
@@ -361,17 +362,17 @@ section > div > a > h2 {
 
 .section__img--puerto--iguazu {
     width: 100%;
-    height: 19vw;
+    height: 18vw;
 }
 
 .section__img--jujuy {
     width: 100%;
-    height: 19vw;
+    height: 18vw;
 }
 
 .section__img--porto--de--galinhas {
     width: 100%;
-    height: 19vw;
+    height: 18vw;
 }
 
 /* Media Queries para Section */
@@ -424,29 +425,6 @@ section > div > a > h2 {
 .phrase__recomendation span {
     font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Slider */
 .slider__conteiner {
@@ -512,19 +490,71 @@ section > div > a > h2 {
 footer {
     background-color: #eeeeee;
     display: flex;
+    flex-direction: column;
 }
 
 .footer__left {
-    margin-right: 100px;
-}
-
-.footer__box--info--footer {
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .footer__img--logo--footer--abordo {
-    width: 300px;
-    height: 100%;
+    height: 5vw;
 }
+
+.footer__box--info--footer {
+    font-weight: 200;
+    font-size: 0.7vw;
+    width: 650px;
+    margin-right: 35px;
+}
+
+.footer__box--info--footer span {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__mid {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__box--contact--footer img {
+    width: 4vw;
+}
+
 
 /* Fin index.html*/
