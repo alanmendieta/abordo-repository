@@ -575,8 +575,6 @@ footer {
 
 /* Fin index.html*/
 
-/* Inicio quienes-somos.html */
-
 .section__quienes--somos section {
     display: flex;
     justify-content: center;
@@ -592,4 +590,23 @@ footer {
 .section__quienes--somos section p {
     width: 60vw;
     font-size: 1rem;
+}
+
+.foto__faltante {
+    width: 30vw;
+}
+
+.section__excursiones {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.section__excursiones section a h2 {
+    font-size: 2vw;
+}
+
+.section__excursiones section a p {
+    font-size: 1vw;
 }
