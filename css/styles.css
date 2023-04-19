@@ -597,10 +597,19 @@ footer {
 }
 
 .section__excursiones {
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
+    width: 33vw;
+}
+
+.excursion__1 {
+    margin: 25px;
+}
+
+.excursion__2 {
+    margin: 25px;
+}
+
+.excursion__3 {
+    margin: 25px;
 }
 
 .section__excursiones section a h2 {
