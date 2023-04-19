@@ -521,15 +521,18 @@ footer {
     grid-gap: 50px;
     margin-top: 90px;
 }
+
 .container__form h2{
     margin-bottom: 15px;
     font-size: 35px
 }
+
 .container__form p{
     font-size: 17px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
+
 .container__form a{
     font-size: 17px;
     display: inline-block;
@@ -539,10 +542,12 @@ footer {
     color: black;
     font-weight: 700;
 }
+
 .container__form a i{
     color: orange;
     margin-right: 10px;
 }
+
 .container__form form .campo, textarea{
     width: 100%;
     padding: 15px 10px;
@@ -552,12 +557,14 @@ footer {
     border-radius: 3px;
     outline: 0px;
 }
+
 .container__form form textarea{
     max-width: 530px;
     min-width: 530px;
     min-height: 140px;
     max-height: 150px;
 }
+
 .container__form .btn-enviar{
     padding: 15px;
     font-size: 16px;
@@ -569,6 +576,7 @@ footer {
     cursor: pointer;
     transition: all 300ms ease;
 }
+
 .container__form .btn-enviar:hover{
     background: #e39403;
 }
@@ -596,19 +604,21 @@ footer {
     width: 30vw;
 }
 
-.section__excursiones {
+/* excursiones.html */
+
+.section__excursiones--html {
     width: 33vw;
 }
 
-.excursion__1 {
+.section__excursion1 {
     margin: 25px;
 }
 
-.excursion__2 {
+.section__excursion2 {
     margin: 25px;
 }
 
-.excursion__3 {
+.section__excursion3 {
     margin: 25px;
 }
 
@@ -617,5 +627,57 @@ footer {
 }
 
 .section__excursiones section a p {
+    font-size: 1vw;
+}
+
+/* argentina.html */
+
+.section__argentina--html {
+    width: 33vw;
+}
+
+.section__argentina1 {
+    margin: 25px;
+}
+
+.section__argentina2 {
+    margin: 25px;
+}
+
+.section__argentina3 {
+    margin: 25px;
+}
+
+.section__argentina section a h2 {
+    font-size: 2vw;
+}
+
+.section__argentina section a p {
+    font-size: 1vw;
+}
+
+/* brasil.html */
+
+.section__brasil--html {
+    width: 33vw;
+}
+
+.section__brasil1 {
+    margin: 25px;
+}
+
+.section__brasil2 {
+    margin: 25px;
+}
+
+.section__brasil3 {
+    margin: 25px;
+}
+
+.section__brasil section a h2 {
+    font-size: 2vw;
+}
+
+.section__brasil section a p {
     font-size: 1vw;
 }
