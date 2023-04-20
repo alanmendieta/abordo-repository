@@ -581,7 +581,24 @@ footer {
     background: #e39403;
 }
 
+/* Media Queries para Footer */
+
+@media screen and (max-width: 720px) {
+    
+    .container__form {
+        display: none;
+    }
+
+    .container__form .info__form {
+        display: none;
+    }
+}
+
 /* Fin index.html*/
+
+.foto__faltante {
+    width: 30vw;
+}
 
 .section__quienes--somos section {
     display: flex;
@@ -600,84 +617,28 @@ footer {
     font-size: 1rem;
 }
 
-.foto__faltante {
-    width: 30vw;
-}
+/* excursiones, argentina y brasil.html */
 
-/* excursiones.html */
-
-.section__excursiones--html {
+.section__info--destinos--excursiones {
     width: 33vw;
 }
 
-.section__excursion1 {
+.section__info {
     margin: 25px;
 }
 
-.section__excursion2 {
+.section__info {
     margin: 25px;
 }
 
-.section__excursion3 {
+.section__info {
     margin: 25px;
 }
 
-.section__excursiones section a h2 {
+.section__info--destinos--excursiones section a h2 {
     font-size: 2vw;
 }
 
-.section__excursiones section a p {
-    font-size: 1vw;
-}
-
-/* argentina.html */
-
-.section__argentina--html {
-    width: 33vw;
-}
-
-.section__argentina1 {
-    margin: 25px;
-}
-
-.section__argentina2 {
-    margin: 25px;
-}
-
-.section__argentina3 {
-    margin: 25px;
-}
-
-.section__argentina section a h2 {
-    font-size: 2vw;
-}
-
-.section__argentina section a p {
-    font-size: 1vw;
-}
-
-/* brasil.html */
-
-.section__brasil--html {
-    width: 33vw;
-}
-
-.section__brasil1 {
-    margin: 25px;
-}
-
-.section__brasil2 {
-    margin: 25px;
-}
-
-.section__brasil3 {
-    margin: 25px;
-}
-
-.section__brasil section a h2 {
-    font-size: 2vw;
-}
-
-.section__brasil section a p {
+.section__info--destinos--excursiones section a p {
     font-size: 1vw;
 }
