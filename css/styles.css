@@ -1,644 +1,534 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Merriweather Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
+/* Clear decoration */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/* Inicio index.html */
-
-/* Header */
+/* Start Header */
 h1 {
-    position: absolute;
-    font-size: 0.063rem;
-    z-index: -1;
+  position: absolute;
+  font-size: 0.064rem;
+  z-index: -1;
 }
 
 .header__top {
-    display: flex;
-    height: 10vw
+  display: flex;
+  height: 10vw;
 }
-
 .header__top .header__logo img {
-    width: 13.8vw;
-    height: 100%;
+  width: 13.8vw;
+  height: 10vw;
 }
-
 .header__top .header__banner img {
-    width: 100%;
-    height: 10vw;
+  width: 100%;
+  height: 10vw;
 }
 
-/* Menu */
-nav {
-    display: flex;
-}
-
+/* Finish Header */
+/* Start Menu*/
 .nav__top {
-    background-color: #f9f9fa;
+  background-color: #f9f9fa;
 }
 
+nav {
+  display: flex;
+}
 nav > ul {
-    height: 100px;
-    display: flex;
+  height: 100px;
+  display: flex;
 }
-
 nav ul li {
-    height: 100%;
-    position: relative;
-    list-style: none;
+  height: 100%;
+  position: relative;
+  list-style: none;
 }
-
 nav > ul > li {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 nav > ul > li > a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 30px;
-    transition: all 300ms ease;
-    font-size: 1rem;
-    color: #00584d;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 30px;
+  transition: all 300ms ease;
+  font-size: 1rem;
+  color: #00584d;
 }
-
-/* Eliminar todo efecto de boton Home */
-nav > ul > li:first-child a:hover {
-    transition: none;
-    box-shadow: none;
-    transform: none;
-    background-color: #f9f9fa;
-}
-
 nav > ul > li > a:hover {
-    transform: scale(0.9);
-    background-color: #aaa;
-    padding: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(0.9);
+  background-color: #aaa;
+  padding: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* Submenu */
-.sub-menu {
-    list-style: none;
+/* Clear All "Home" Button Effects / Borrar todos los efectos del Boton "Home" */
+nav > ul > li:first-child a:hover {
+  transition: none;
+  box-shadow: none;
+  transform: none;
+  background-color: #f9f9fa;
 }
 
+/* Finish Menu */
+/* Start Submenu */
 nav ul li ul {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 120px;
-    left: -30px;
-    padding: 7px 0px;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 999;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    transition: all 320ms ease;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 120px;
+  left: -30px;
+  padding: 7px 0px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: all 320ms ease;
 }
-
 nav ul li:hover ul {
-    visibility: visible;
-    opacity: 1;
-    top: 70px;
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
 }
-
 nav ul li ul::before {
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid white;
-    position: absolute;
-    top: -12px;
-    left: 83px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -12px;
+  left: 83px;
 }
-
 nav ul li ul li a {
-    display: block;
-    color: #00584d;
-    padding: 10px;
-    padding-left: 10px;
-    margin-top: 5px;
-    text-transform: uppercase;
-    transition: all 320ms ease;
+  display: block;
+  color: #00584d;
+  padding: 10px;
+  padding-left: 10px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  transition: all 320ms ease;
 }
-
 nav ul li ul li a:hover {
-    background-color: #aaa;
-    color: #fff;
-    transform: scale(1.1);
-    padding-left: 40px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  background-color: #aaa;
+  color: #fff;
+  transform: scale(1.1);
+  padding-left: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon display:none */
 .icon__menu {
-    display: none;
+  display: none;
 }
 
 #check__menu {
-    display: none;
+  display: none;
 }
 
-/* Media Queries para Header - Nav */
+/* MQ (Media Queries) for Header - Nav */
 @media screen and (max-width: 720px) {
-
-    .header__top {
-       width: 100%;
-       height: 12vw;
-    }
-    
-    .header__top .header__logo img {
-        width: 16.5vw;
-        height: 100%;
-    }
-
-    .header__top .header__banner img {
-        height: 12vw;
-        width: 100%;
-    }
+  .header__top {
+    width: 100%;
+    height: 12vw;
+  }
+  .header__top .header__logo img {
+    width: 16.5vw;
+    height: 100%;
+  }
+  .header__top .header__banner img {
+    width: 100%;
+    height: 12vw;
+  }
 }
-
 @media screen and (max-width: 720px) {
-
-    nav > ul {
-        flex-direction: column;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 0px;
-        transition: all 300ms ease;
-        z-index: 100;
-        opacity: 0;
-        visibility: hidden;
-        padding: 0;
-    }
-
-    nav > ul > li > ul {
-        left: 90px;
-    }
-
-    nav > ul > li:hover ul {
-        top: 75px;
-    }
-    
-    .icon__menu {
-        display: flex;
-        align-items: center;
-        font-size: 4.5vw;
-        color: #00584d;
-        cursor: pointer;
-        padding-top: 0.8vw;
-        padding-left: 50%;
-        margin-top: 2vw;
-    }
-    
-    #label__check {
-        width: 76px;
-        height: 100%;
-        display: none;
-    }
-    
-    #check__menu {
-        display: none;
-    }
-
-    #label__check {
-        display: block;
-    }
-
-    #check__menu:checked ~ nav > ul {
-        height: 350px;
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-/* Banners */
-.banner {
-    display: flex;
-    justify-content: space-around;
-}
-
-.banner .banner__argentina .banner__img--argentina {
-    display: flex;
-    width: 40vw;
-    margin-top: 4vw;
-    margin-right: -5vw;
-    margin-bottom: 2vw;
-}
-
-.banner .banner__brasil .banner__img--brasil {
-    display: flex;
-    width: 40vw;
-    margin-top: 4vw;
-    margin-left: -5vw;
-    margin-bottom: 2vw; 
-}
-
-.banner a figure img {
-    transition: 300ms;
-}
-
-.banner a figure img:hover {
-    transform: scale(1.1);
-    transition-delay: 75ms;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
-}
-
-/* Media Queries para Banner */
-@media screen and (max-width: 720px) {
-    .banner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .banner .banner__argentina .banner__img--argentina {
-        display: flex;
-        width: 80vw;
-        margin-left: 0vw;
-        margin-bottom: 0vw;
-    }
-
-    .banner .banner__brasil .banner__img--brasil {
-        display: flex;
-        width: 80vw;
-        margin-left: 5vw;
-        margin-bottom: 0vw;
-    }
-
-    .banner a figure img {
-        transition: 50ms;
-    }
-
-    .banner a figure img:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
-    }
-}
-
-/* Frase disruptiva */
-.phrase__disruptive {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0.5vw;
-    font-size: 1.4rem;
-    font-weight: 300;
-}
-
-/* Media Queries para Frase disruptiva */
-@media screen and (max-width: 720px) {
-
-    .phrase__disruptive {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 4vw;
-        font-size: 3vw;
-        font-weight: 300;
-    }
-}
-
-/* Sections */
-.sections__main {
-    margin-top: 33px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-section > div > a > h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2vw;
-}
-
-.section__text {
-    width: 100%;
-    font-size: 1vw;
-}
-
-.section__argentina {
-    margin: 0.5vw;
-    transition: all 150ms ease;
-}
-
-.section__argentina:hover {
-    transform: scale(0.98);
-    box-shadow: 0 0 5 0 rgba(0, 0, 0, 0.5);
-}
-
-.section__brasil {
-    margin: 0.5vw;
-    transition: all 150ms ease;
-}
-
-.section__brasil:hover {
-    transform: scale(0.98);
-    box-shadow: 0 0 5 0 rgba(0, 0, 0, 0.5);
-}
-
-.section__img--puerto--iguazu {
-    width: 100%;
-    height: 18vw;
-}
-
-.section__img--jujuy {
-    width: 100%;
-    height: 18vw;
-}
-
-.section__img--porto--de--galinhas {
-    width: 100%;
-    height: 18vw;
-}
-
-/* Media Queries para Section */
-@media screen and (max-width: 720px) {
-    
-    .sections__main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10vw;
-    }
-
-    .section__text {
-        width: 100%;
-        font-size: 2.3vw;
-    }
-
-    .section__argentina {
-        width: 75%;
-    }
-
-    .section__brasil {
-        width: 75%;
-    }
-
-    .section__img--puerto--iguazu {
-        width: 100%;
-        height: 45vw;
-    }
-
-    .section__img--porto--de--galinhas {
-        width: 100%;
-        height: 45vw;
-    }
-
-    .section__img--jujuy {
-        width: 100%;
-        height: 45vw;
-    }
-}
-
-.phrase__recomendation {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2vw;
-    font-size: 0.9em;
-    font-weight: 100;
-}
-
-.phrase__recomendation span {
-    font-weight: 600;
-}
-
-/* Slider */
-.slider__conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
-  
-.slider {
-    width: 50%;
-    height: 70px;
-    margin: auto;
-    margin-top: 2.5vw;
-    margin-bottom: 2.5vw;
-    overflow: hidden;
-    position: relative;
-    border-radius: 35px;
-    box-shadow: rgba(50, 50, 93, 0.6) 0px 3px 6px  -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 30px -1px;
-}
-  
-.slider__wrapped {
-    display: flex;
-    animation: slide 40s infinite linear;
-    position: absolute;
-    padding: 1.5%;
+  nav > ul {
+    flex-direction: column;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-}
-  
-.slider__wrapped img {
-    width: auto;
-    height: 100%;
-    margin-right: 125px;
-    pointer-events: auto;
-}
-
-@keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-250%);
-    }
-}
-
-/* Media Queries para slider*/
-@media screen and (max-width:720px) {
-
-    .slider {
-        display: none;
-    }
-
-    .phrase__recomendation {
-        display: none;
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #eeeeee;
+    width: 100%;
+    height: 0px;
+    transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+  nav > ul > li > ul {
+    left: 90px;
+  }
+  nav > ul > li:hover ul {
+    top: 75px;
+  }
+  .icon__menu {
     display: flex;
+    align-items: center;
+    font-size: 4.5vw;
+    color: #00584d;
+    cursor: pointer;
+    padding-top: 0.8vw;
+    padding-left: 50%;
+    margin-top: 2vw;
+  }
+  #label__check {
+    width: 76px;
+    height: 100%;
+    display: none;
+  }
+  #label__check {
+    display: block;
+  }
+  #check__menu {
+    display: none;
+  }
+  #check__menu:checked ~ nav > ul {
+    height: 350px;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/* Start Footer */
+footer {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .footer__logo--footer--abordo img {
-    width: 200px;
+  width: 200px;
 }
 
 .footer__box--info--footer {
-    width: 30vw;
-    margin-right: 1vw;
+  width: 900px;
 }
-
 .footer__box--info--footer p {
-    font-weight: 300;
-    font-size: 0.8rem;
+  font-weight: 300;
+  font-size: 12px;
 }
-
 .footer__box--info--footer p span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .footer__container--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__form {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+.container__form h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.container__form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+.container__form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 700;
+}
+.container__form a i {
+  color: orange;
+  margin-right: 10px;
+}
+.container__form form textarea {
+  max-width: 100px;
+  min-width: 600px;
+  min-height: 200px;
+  max-height: 210px;
+}
+.container__form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #00584d;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.container__form .btn-enviar:hover {
+  background: orange;
+}
+
+.container__form form .campo, textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+
+/* Finish Footer */
+/* Start Slider */
+.slider__conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.slider {
+  width: 50%;
+  height: 70px;
+  margin: auto;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+  overflow: hidden;
+  position: relative;
+  border-radius: 35px;
+  box-shadow: rgba(50, 50, 93, 0.6) 0px 3px 6px -1px, rgba(0, 0, 0, 0.3) 0px 1px 30px -1px;
+}
+
+.slider__wrapped {
+  display: flex;
+  animation: slide 40s infinite linear;
+  position: absolute;
+  padding: 1.5%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.slider__wrapped img {
+  width: auto;
+  height: 100%;
+  margin-right: 125px;
+  pointer-events: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+/* Finish Slider */
+/* Start Recomendation Phrase */
+.recomendation__phrase {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vw;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.recomendation__phrase span {
+  font-weight: 600;
+}
+
+/* Finish Recomendation Phrase */
+/* MQ (Media Queries for Slider - Recomendation Phrase */
+@media screen and (max-width: 720px) {
+  .slider {
+    display: none;
+  }
+  .recomendation__phrase {
+    display: none;
+  }
+}
+/* Start Banners */
+.banner {
+  display: flex;
+  justify-content: space-around;
+}
+.banner .banner__argentina .banner__img--argentina {
+  display: flex;
+  width: 40vw;
+  margin-top: 4vw;
+  margin-right: -5vw;
+  margin-bottom: 2vw;
+}
+.banner .banner__brasil .banner__img--brasil {
+  display: flex;
+  width: 40vw;
+  margin-top: 4vw;
+  margin-left: -5vw;
+  margin-bottom: 2vw;
+}
+.banner a figure img {
+  transition: 300ms;
+}
+.banner a figure img:hover {
+  transform: scale(1.1);
+  transition-delay: 75ms;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* MQ (Media Queries) for Banners */
+@media screen and (max-width: 720px) {
+  .banner {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    align-items: center;
+  }
+  .banner .banner__argentina .banner__img--argentina {
+    display: flex;
+    width: 80vw;
+    margin-left: 0vw;
+    margin-bottom: 0vw;
+  }
+  .banner .banner__brasil .banner__img--brasil {
+    display: flex;
+    width: 80vw;
+    margin-left: 5vw;
+    margin-bottom: 0vw;
+  }
+}
+/* Finish Banners */
+/* Start DP */
+.disruptive__phrase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5vw;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #00584d;
 }
 
-.container__form{
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 50px;
-    margin-top: 90px;
-}
-
-.container__form h2{
-    margin-bottom: 15px;
-    font-size: 35px
-}
-
-.container__form p{
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.container__form a{
-    font-size: 17px;
-    display: inline-block;
-    text-decoration: none;
-    width: 100%;
-    margin-bottom: 15px;
-    color: black;
-    font-weight: 700;
-}
-
-.container__form a i{
-    color: orange;
-    margin-right: 10px;
-}
-
-.container__form form .campo, textarea{
-    width: 100%;
-    padding: 15px 10px;
-    font-size: 16px;
-    border: 1px solid #dbdbdb;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    outline: 0px;
-}
-
-.container__form form textarea{
-    max-width: 530px;
-    min-width: 530px;
-    min-height: 140px;
-    max-height: 150px;
-}
-
-.container__form .btn-enviar{
-    padding: 15px;
-    font-size: 16px;
-    border: none;
-    outline: 0px;
-    background: orange;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-
-.container__form .btn-enviar:hover{
-    background: #e39403;
-}
-
-/* Media Queries para Footer */
-
+/* MQ (Media Queries) for DP */
 @media screen and (max-width: 720px) {
-    
-    .container__form {
-        display: none;
-    }
-
-    .container__form .info__form {
-        display: none;
-    }
+  .disruptive__phrase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 480px) {
+  .disruptive__phrase {
+    font-size: 0.9rem;
+  }
+}
+/* Finish DP */
+/* Start Sections */
+.sections__main {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-/* Fin index.html*/
-
-.foto__faltante {
-    width: 30vw;
+section > div > a > h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+}
+section > div > a > p {
+  width: 100%;
+  font-size: 1rem;
 }
 
-.section__quienes--somos section {
+.section__argentina {
+  margin: 0.5vw;
+  transition: all 150ms ease;
+}
+.section__argentina:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5 0 rgba(0, 0, 0, 0.5);
+}
+
+.section__brasil {
+  margin: 0.5vw;
+  transition: all 150ms ease;
+}
+.section__brasil:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5 0 rgba(0, 0, 0, 0.5);
+}
+
+.section__img--puerto--iguazu {
+  width: 100%;
+  height: 18vw;
+}
+
+.section__img--jujuy {
+  width: 100%;
+  height: 18vw;
+}
+
+.section__img--porto--de--galinhas {
+  width: 100%;
+  height: 18vw;
+}
+
+/* MQ (Media Queries) for Sections */
+@media screen and (max-width: 720px) {
+  .sections__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vw;
+  }
+  section > div > a > h2 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 100px;
-}
-
-.section__quienes--somos section h2 {
-    font-size: 2rem;
-}
-
-.section__quienes--somos section p {
-    width: 60vw;
-    font-size: 1rem;
-}
-
-/* excursiones, argentina y brasil.html */
-
-.section__info--destinos--excursiones {
-    width: 33vw;
-}
-
-.section__info {
-    margin: 25px;
-}
-
-.section__info {
-    margin: 25px;
-}
-
-.section__info {
-    margin: 25px;
-}
-
-.section__info--destinos--excursiones section a h2 {
     font-size: 2vw;
+  }
+  section > div > a > p {
+    width: 100%;
+    font-size: 2.3vw;
+  }
+  .section__argentina {
+    width: 85%;
+  }
+  .section__brasil {
+    width: 85%;
+  }
+  .section__img--puerto--iguazu {
+    width: 100%;
+    height: 47vw;
+  }
+  .section__img--jujuy {
+    width: 100%;
+    height: 47vw;
+  }
+  .section__img--porto--de--galinhas {
+    width: 100%;
+    height: 47vw;
+  }
 }
+/* Finish Sections */
 
-.section__info--destinos--excursiones section a p {
-    font-size: 1vw;
-}
+/*# sourceMappingURL=styles.css.map */

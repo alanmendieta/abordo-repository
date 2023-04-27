@@ -1,0 +1,73 @@
+/* Start Slider */
+.slider__conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.slider {
+    width: 50%;
+    height: 70px;
+    margin: auto;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+    overflow: hidden;
+    position: relative;
+    border-radius: 35px;
+    box-shadow: rgba(50, 50, 93, 0.6) 0px 3px 6px  -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 30px -1px;
+}
+
+.slider__wrapped {
+    display: flex;
+    animation: slide 40s infinite linear;
+    position: absolute;
+    padding: 1.5%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    img {
+        width: auto;
+        height: 100%;
+        margin-right: 125px;
+        pointer-events: auto;
+    }
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-250%);
+    }
+}
+/* Finish Slider */
+
+/* Start Recomendation Phrase */
+.recomendation__phrase {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+    font-size: 1.2rem;
+    font-weight: 100;
+
+    span {
+        font-weight: 600;
+    }
+}/* Finish Recomendation Phrase */
+
+/* MQ (Media Queries for Slider - Recomendation Phrase */
+@media screen and (max-width: 720px) {
+    
+    .slider {
+        display: none;
+    }
+
+    .recomendation__phrase {
+        display: none;
+    }
+}
