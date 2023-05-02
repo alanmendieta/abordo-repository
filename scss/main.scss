@@ -1,7 +1,13 @@
-@import "./base";
+@import "./base/reset";
+@import "./base/type";
 
-@import "./components/header";
-@import "./components/footer";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/forms";
+
+@import "./views/index";
+
 @import "./components/slider";
-
-@import "./pages/index";

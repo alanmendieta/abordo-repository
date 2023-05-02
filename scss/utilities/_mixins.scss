@@ -1,0 +1,26 @@
+@mixin disruptive__phrase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #00584d;
+}
+
+@mixin banner__img--index {
+    display: flex;
+    width: 45vw;
+    margin-top: 4vw;
+    margin-left: -2vw;
+    margin-bottom: 2vw;
+}
+
+// Media Queries
+
+@mixin banner__img--index--MQ {
+    display: flex;
+    width: 80vw;
+    margin-left: 5vw;
+    margin-bottom: 0vw;
+}

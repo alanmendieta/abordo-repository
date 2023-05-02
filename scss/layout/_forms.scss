@@ -1,37 +1,3 @@
-/* Start Footer */
-footer {
-    background-color: $footer-color;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.footer__logo--footer--abordo {
-
-    img {
-        width: 200px;
-    }
-}
-
-.footer__box--info--footer {
-    width: 900px;
-
-    p {
-        font-weight: 300;
-        font-size: 12px;
-
-        span {
-            font-weight: 600;
-        }
-    }
-}
-
-.footer__container--info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .container__form {
     width: 100%;
     max-width: 1000px;
@@ -46,7 +12,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin-bottom: 15px;
-        font-size: 35px;
+        font-size: 2rem;
     }
 
     p {
@@ -54,6 +20,7 @@ footer {
         line-height: 1.6;
         margin-bottom: 30px;
         font-weight: 300;
+        margin-left: 2vw;
     }
 
     a {
@@ -83,7 +50,7 @@ footer {
 
     .btn-enviar {
         padding: 15px;
-        font-size: 16px;
+        font-size: 1rem;
         border: none;
         outline: 0px;
         background: $green-abordo-color;
@@ -101,10 +68,65 @@ footer {
 .container__form form .campo, textarea{
     width: 100%;
     padding: 15px 10px;
-    font-size: 16px;
+    font-size: 1rem;
     border: 1px solid #dbdbdb;
     margin-bottom: 20px;
     border-radius: 3px;
     outline: 0px;
 }
-/* Finish Footer */
+
+// MQ (Media Queries) for Form
+@media screen and (max-width: 1024px) {
+
+    .btn-enviar {
+        display: flex;
+    }
+
+    .container__form form textarea {
+        max-width: 100px;
+        min-width: 430px;
+        min-height: 150px;
+        max-height: 210px;
+    }
+
+    .container__form form .campo, textarea {
+        font-size: 0.7rem;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+    .container__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__form form textarea {
+        max-width: 100px;
+        min-width: 300px;
+        min-height: 150px;
+        max-height: 210px;
+    }
+
+    .container__form form .campo, textarea {
+        display: flex;
+        align-items: center;
+        font-size: 0.6rem;
+        width: 270px;
+    }
+
+    .info__form {
+        width: 50vw;
+    }
+
+    .container__form h2 {
+        font-size: 0.9rem;
+    }
+
+    .container__form p {
+        width: 50vw;
+        font-size: 0.7rem;
+    }
+}

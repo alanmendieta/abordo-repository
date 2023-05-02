@@ -1,0 +1,55 @@
+footer {
+    background-color: $footer-color;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.footer__logo--footer--abordo {
+
+    img {
+        width: 200px;
+    }
+}
+
+.footer__box--info--footer {
+    width: 900px;
+
+    p {
+        font-weight: 300;
+        font-size: 0.8rem;
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.footer__container--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// MQ (Media Queries) for Footer Box Info
+@media screen and (max-width: 1024px) {
+
+    .footer__box--info--footer {
+        width: 500px;
+    }
+
+    .footer__box--info--footer p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+    .footer__box--info--footer {
+        width: 300px;
+    }
+    
+    .footer__box--info--footer p {
+        font-size: 0.4rem;
+    }
+}

@@ -1,4 +1,4 @@
-/* Start Banners */
+// Start Banners
 .banner {
     display: flex;
     justify-content: space-around;
@@ -6,22 +6,14 @@
     .banner__argentina {
 
         .banner__img--argentina {
-            display: flex;
-            width: 45vw;
-            margin-top: 4vw;
-            margin-right: -2vw;
-            margin-bottom: 2vw;
+            @include banner__img--index
         }
     }
 
     .banner__brasil {
 
         .banner__img--brasil {
-            display: flex;
-            width: 45vw;
-            margin-top: 4vw;
-            margin-left: -2vw;
-            margin-bottom: 2vw;;
+            @include banner__img--index
         }
     }
 
@@ -42,7 +34,7 @@
     }
 }
 
-/* MQ (Media Queries) for Banners */
+// MQ (Media Queries) for Banners
 @media screen and (max-width: 720px) {
 
     .banner {
@@ -53,38 +45,26 @@
         .banner__argentina {
 
             .banner__img--argentina {
-                display: flex;
-                width: 80vw;
-                margin-left: 0vw;
-                margin-bottom: 0vw;
+                @include banner__img--index--MQ
             }
         }
 
         .banner__brasil {
 
             .banner__img--brasil {
-                display: flex;
-                width: 80vw;
-                margin-left: 5vw;
-                margin-bottom: 0vw;
+                @include banner__img--index--MQ
             }
         }
     }
 }
-/* Finish Banners */
+// Finish Banners
 
-/* Start DP */
+// Start DP
 .disruptive__phrase {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1vw;
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: #00584d;
+    @include disruptive__phrase
 }
 
-/* MQ (Media Queries) for DP */
+// MQ (Media Queries) for DP
 @media screen and (max-width: 720px) {
     
     .disruptive__phrase {
@@ -104,9 +84,9 @@
         font-size: 0.9rem;
     }
 }
-/* Finish DP */
+// Finish DP
 
-/* Start Sections */
+// Start Sections
 .sections__main {
     margin-top: 33px;
     display: flex;
@@ -169,7 +149,7 @@ section {
     height: $section-height;
 }
 
-/* MQ (Media Queries) for Sections */
+// MQ (Media Queries) for Sections
 @media screen and (max-width: 720px) {
     
     .sections__main {
@@ -222,4 +202,3 @@ section {
         height: $section-height-responsive;
     }
 }
-/* Finish Sections */
