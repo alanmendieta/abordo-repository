@@ -346,6 +346,30 @@ footer {
     font-size: 0.7rem;
   }
 }
+.section__info {
+  display: flex;
+  width: 750px;
+}
+.section__info img {
+  width: 400px;
+}
+.section__info p {
+  font-size: 0.8rem;
+  width: 650px;
+}
+
+@media screen and (max-width: 720px) {
+  .section__info {
+    width: 300px;
+  }
+  .section__info img {
+    width: 200px;
+  }
+  .section__info p {
+    font: 0.6rem;
+    width: 400px;
+  }
+}
 .banner {
   display: flex;
   justify-content: space-around;

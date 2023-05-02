@@ -7,7 +7,12 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/forms";
+@import "./layout/section-pages";
 
 @import "./views/index";
+@import "./views/argentina.scss";
+@import "./views/brasil.scss";
+@import "./views/excursiones.scss";
+@import "./views/quienes-somos.scss";
 
 @import "./components/slider";
