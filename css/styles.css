@@ -352,16 +352,14 @@ footer {
 }
 .banner .banner__argentina .banner__img--argentina {
   display: flex;
-  width: 45vw;
+  width: 43vw;
   margin-top: 4vw;
-  margin-left: -2vw;
   margin-bottom: 2vw;
 }
 .banner .banner__brasil .banner__img--brasil {
   display: flex;
-  width: 45vw;
+  width: 43vw;
   margin-top: 4vw;
-  margin-left: -2vw;
   margin-bottom: 2vw;
 }
 .banner a figure img {
