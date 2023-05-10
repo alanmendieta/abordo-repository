@@ -22,7 +22,7 @@
         figure {
 
             img {
-                transition: 300ms;
+                transition: all 300ms ease;
 
                 &:hover {
                     transform: scale(1.1);
@@ -88,65 +88,60 @@
 
 // Start Sections
 .sections__main {
-    margin-top: 33px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-section {
-
-    > div {
-
-        > a {
-
-            > h2 {
-                display: flex;
-                justify-content: center;
-                font-size: 2vw;
-            }
-
-            > p {
-                width: 100%;
-                font-size: 1rem;
-            }
-        }
-    }
-}
-
 .section__argentina {
-    margin: 0.5vw;
     transition: all 150ms ease;
+    padding: 10px;
+    border-radius: 20px;
 
     &:hover {
         transform: scale(0.98);
         box-shadow: 0 0 5 0 rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+        background: $grey-color;
+        padding: 15px;
+        border-radius: 10px;
     }
 }
 
 .section__brasil {
-    margin: 0.5vw;
     transition: all 150ms ease;
 
     &:hover {
         transform: scale(0.98);
         box-shadow: 0 0 5 0 rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+        background: $grey-color;
+        padding: 15px;
+        border-radius: 10px;
     }
 }
 
 .section__img--puerto--iguazu {
     width: 100%;
     height: $section-height;
+    border-radius: $section-border-radius;
 }
 
 .section__img--jujuy {
     width: 100%;
     height: $section-height;
+    border-radius: $section-border-radius;
 }
 
 .section__img--porto--de--galinhas {
     width: 100%;
     height: $section-height;
+    border-radius: $section-border-radius;
 }
 
 // MQ (Media Queries) for Sections
@@ -157,26 +152,6 @@ section {
         flex-direction: column;
         align-items: center;
         margin-bottom: 10vw;
-    }
-
-    section {
-
-        > div {
-    
-            > a {
-    
-                > h2 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 2vw;
-                }
-    
-                > p {
-                    width: 100%;
-                    font-size: 2.3vw;
-                }
-            }
-        }
     }
 
     .section__argentina {

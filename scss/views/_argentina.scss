@@ -1,0 +1,113 @@
+// Section
+.section__info--destinos--arg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+
+    section {
+
+        img{
+            width: 800px;
+        }
+
+        p {
+            width: 720px;
+        }
+    }
+
+    .section__info--salta {
+        background: $light-grey-color;
+        border-radius: 14px;
+        padding: 40px;
+    }
+
+    .section__info--mdq {
+        background: $grey-color;
+        border-radius: 14px;
+        padding: 40px;
+        margin-top: 50px;
+    }
+
+    .section__info--santacruz {
+        background: $light-grey-color;
+        border-radius: 14px;
+        padding: 40px;
+        margin-top: 50px;
+    }
+
+    .text__section--argentina {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// MQ (Media Queries) for Section Argentina
+@media screen and (max-width: 1024px) {
+
+    .section__info--destinos--arg {
+    
+        section {
+    
+            img{
+                display: flex;
+                justify-content: center;
+                width: 500px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .section__info--destinos--arg {
+    
+        section {
+    
+            img{
+                display: flex;
+                justify-content: center;
+                width: 280px;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.5rem;
+                width: 270px;
+            }
+        }
+
+        .section__info--salta {
+            background: $light-grey-color;
+            border-radius: 14px;
+            padding: 20px;
+        }
+    
+        .section__info--mdq {
+            background: $grey-color;
+            border-radius: 14px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    
+        .section__info--santacruz {
+            background: $light-grey-color;
+            border-radius: 14px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    }
+}

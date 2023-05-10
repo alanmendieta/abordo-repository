@@ -346,30 +346,6 @@ footer {
     font-size: 0.7rem;
   }
 }
-.section__info {
-  display: flex;
-  width: 750px;
-}
-.section__info img {
-  width: 400px;
-}
-.section__info p {
-  font-size: 0.8rem;
-  width: 650px;
-}
-
-@media screen and (max-width: 720px) {
-  .section__info {
-    width: 300px;
-  }
-  .section__info img {
-    width: 200px;
-  }
-  .section__info p {
-    font: 0.6rem;
-    width: 400px;
-  }
-}
 .banner {
   display: flex;
   justify-content: space-around;
@@ -387,7 +363,7 @@ footer {
   margin-bottom: 2vw;
 }
 .banner a figure img {
-  transition: 300ms;
+  transition: all 300ms ease;
 }
 .banner a figure img:hover {
   transform: scale(1.1);
@@ -418,7 +394,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1vw;
+  margin-top: 40px;
   font-size: 1.6rem;
   font-weight: 300;
   color: #00584d;
@@ -441,53 +417,56 @@ footer {
   }
 }
 .sections__main {
-  margin-top: 33px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-section > div > a > h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 2vw;
-}
-section > div > a > p {
-  width: 100%;
-  font-size: 1rem;
-}
-
 .section__argentina {
-  margin: 0.5vw;
   transition: all 150ms ease;
+  padding: 10px;
+  border-radius: 20px;
 }
 .section__argentina:hover {
   transform: scale(0.98);
   box-shadow: 0 0 5 0 rgba(0, 0, 0, 0.5);
 }
+.section__argentina p {
+  background: #eeeeee;
+  padding: 15px;
+  border-radius: 10px;
+}
 
 .section__brasil {
-  margin: 0.5vw;
   transition: all 150ms ease;
 }
 .section__brasil:hover {
   transform: scale(0.98);
   box-shadow: 0 0 5 0 rgba(0, 0, 0, 0.5);
 }
+.section__brasil p {
+  background: #eeeeee;
+  padding: 15px;
+  border-radius: 10px;
+}
 
 .section__img--puerto--iguazu {
   width: 100%;
   height: 18vw;
+  border-radius: 5px;
 }
 
 .section__img--jujuy {
   width: 100%;
   height: 18vw;
+  border-radius: 5px;
 }
 
 .section__img--porto--de--galinhas {
   width: 100%;
   height: 18vw;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 720px) {
@@ -496,15 +475,6 @@ section > div > a > p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10vw;
-  }
-  section > div > a > h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2vw;
-  }
-  section > div > a > p {
-    width: 100%;
-    font-size: 2.3vw;
   }
   .section__argentina {
     width: 85%;
@@ -523,6 +493,86 @@ section > div > a > p {
   .section__img--porto--de--galinhas {
     width: 100%;
     height: 47vw;
+  }
+}
+.section__info--destinos--arg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.section__info--destinos--arg section img {
+  width: 800px;
+}
+.section__info--destinos--arg section p {
+  width: 720px;
+}
+.section__info--destinos--arg .section__info--salta {
+  background: #f9f9fa;
+  border-radius: 14px;
+  padding: 40px;
+}
+.section__info--destinos--arg .section__info--mdq {
+  background: #eeeeee;
+  border-radius: 14px;
+  padding: 40px;
+  margin-top: 50px;
+}
+.section__info--destinos--arg .section__info--santacruz {
+  background: #f9f9fa;
+  border-radius: 14px;
+  padding: 40px;
+  margin-top: 50px;
+}
+.section__info--destinos--arg .text__section--argentina {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .section__info--destinos--arg section img {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+  }
+  .section__info--destinos--arg section h2 {
+    font-size: 1.5rem;
+  }
+  .section__info--destinos--arg section p {
+    font-size: 0.8rem;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .section__info--destinos--arg section img {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+  }
+  .section__info--destinos--arg section h2 {
+    font-size: 1rem;
+  }
+  .section__info--destinos--arg section p {
+    font-size: 0.5rem;
+    width: 270px;
+  }
+  .section__info--destinos--arg .section__info--salta {
+    background: #f9f9fa;
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .section__info--destinos--arg .section__info--mdq {
+    background: #eeeeee;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  .section__info--destinos--arg .section__info--santacruz {
+    background: #f9f9fa;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 50px;
   }
 }
 .slider__conteiner {
@@ -580,12 +630,54 @@ section > div > a > p {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1024px) {
+  .slider {
+    width: 70%;
+  }
+  .recomendation__phrase {
+    font-size: 0.8rem;
+  }
+}
 @media screen and (max-width: 720px) {
   .slider {
     display: none;
   }
   .recomendation__phrase {
     display: none;
+  }
+}
+section > div > a > h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+section > div > a > p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  section > div > a > h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.05rem;
+  }
+  section > div > a > p {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  section > div > a > h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  section > div > a > p {
+    width: 100%;
+    font-size: 0.9rem;
   }
 }
 

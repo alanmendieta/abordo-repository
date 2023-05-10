@@ -57,6 +57,18 @@
     }
 }
 
+// MQ (Media Queries) for Slider
+@media screen and (max-width: 1024px) {
+
+    .slider {
+        width: 70%;
+    }
+
+    .recomendation__phrase {
+        font-size: 0.8rem;
+    }
+}
+
 // MQ (Media Queries for Slider - Recomendation Phrase
 @media screen and (max-width: 720px) {
     
