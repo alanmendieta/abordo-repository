@@ -31,6 +31,13 @@
                 }
             }
         }
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -53,6 +60,16 @@
 
             .banner__img--brasil {
                 @include banner__img--index--MQ
+            }
+        }
+
+        a {
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.8rem;
             }
         }
     }

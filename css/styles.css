@@ -370,6 +370,12 @@ footer {
   transition-delay: 75ms;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
 }
+.banner a p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
 
 @media screen and (max-width: 720px) {
   .banner {
@@ -388,6 +394,12 @@ footer {
     width: 80vw;
     margin-left: 5vw;
     margin-bottom: 0vw;
+  }
+  .banner a p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
   }
 }
 .disruptive__phrase {
