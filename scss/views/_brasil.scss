@@ -7,8 +7,8 @@
 
     section {
 
-        img {
-            width: 29vw;
+        h2 {
+            font-size: 1.2rem;
         }
 
         p {
@@ -16,8 +16,9 @@
             font-size: 0.9rem;
         }
 
-        h2 {
-            font-size: 1.2rem;
+        img {
+            width: 29vw;
+            border-radius: 10px;
         }
     }
 
@@ -76,10 +77,6 @@
 @media screen and (max-width: 1024px) {
 
     .section__info--destinos--br {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 0.5vw;
-        margin-right: 0.5vw;
     
         section {
     

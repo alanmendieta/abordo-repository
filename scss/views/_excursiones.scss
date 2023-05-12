@@ -1,0 +1,132 @@
+// Section
+.section__info--destinos--excursiones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+
+    section {
+
+        h2 {
+            font-size: 0.9rem;
+        }
+
+        p {
+            width: 23vw;
+            font-size: 0.7rem;
+        }
+
+        img{
+            width: 28vw;
+        }
+
+    }
+
+    .section__info--gomon {
+        background: $grey-color;
+        padding: 15px;
+        border-radius: 40px;
+        margin-top: 50px;
+
+        img {
+            border-radius: 30px;
+        }
+    }
+
+    .section__info--teleferico {
+        background: $light-grey-color;
+        padding: 15px;
+        border-radius: 40px;
+
+        img {
+            border-radius: 30px;
+        }
+    }
+
+    .section__info--bsas {
+        background: $grey-color;
+        padding: 15px;
+        border-radius: 40px;
+        margin-top: 50px;
+
+        img {
+            border-radius: 30px;
+        }
+    }
+
+    .text__section--excursiones {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// MQ (Media Queries) for Section Excursiones
+@media screen and (max-width: 1024px) {
+
+    .section__info--destinos--excursiones {
+    
+        section {
+    
+            img {
+                display: flex;
+                justify-content: center;
+                width: 28vw;
+            }
+    
+            p {
+                width: 23vw;
+                font-size: 0.55rem;
+            }
+    
+            h2 {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .section__info--destinos--excursiones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    
+        section {
+    
+            img {
+                width: 65vw;
+            }
+    
+            p {
+                width: 65vw;
+                font-size: 0.4rem;
+            }
+    
+            h2 {
+                font-size: 0.6rem;
+            }
+        }
+
+        .section__info--gomon {
+            margin: 0;
+            margin-top: 30px;
+        }
+    
+        .section__info--teleferico {
+            margin: 0;
+            margin-top: 30px;
+        }
+    
+        .section__info--bsas {
+            margin: 0;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -502,11 +502,12 @@ footer {
   align-items: center;
   margin: 50px;
 }
-.section__info--destinos--arg section img {
-  width: 800px;
-}
 .section__info--destinos--arg section p {
   width: 720px;
+}
+.section__info--destinos--arg section img {
+  width: 800px;
+  border-radius: 10px;
 }
 .section__info--destinos--arg .section__info--salta {
   background: #f9f9fa;
@@ -581,15 +582,16 @@ footer {
   margin-left: 0.5vw;
   margin-right: 0.5vw;
 }
-.section__info--destinos--br section img {
-  width: 29vw;
+.section__info--destinos--br section h2 {
+  font-size: 1.2rem;
 }
 .section__info--destinos--br section p {
   width: 28vw;
   font-size: 0.9rem;
 }
-.section__info--destinos--br section h2 {
-  font-size: 1.2rem;
+.section__info--destinos--br section img {
+  width: 29vw;
+  border-radius: 10px;
 }
 .section__info--destinos--br .section__info--buzios {
   margin: 0.35vw;
@@ -636,12 +638,6 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  .section__info--destinos--br {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-  }
   .section__info--destinos--br section img {
     display: flex;
     justify-content: center;
@@ -686,6 +682,178 @@ footer {
     margin: 0;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+}
+.section__info--destinos--excursiones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+.section__info--destinos--excursiones section h2 {
+  font-size: 0.9rem;
+}
+.section__info--destinos--excursiones section p {
+  width: 23vw;
+  font-size: 0.7rem;
+}
+.section__info--destinos--excursiones section img {
+  width: 28vw;
+}
+.section__info--destinos--excursiones .section__info--gomon {
+  background: #eeeeee;
+  padding: 15px;
+  border-radius: 40px;
+  margin-top: 50px;
+}
+.section__info--destinos--excursiones .section__info--gomon img {
+  border-radius: 30px;
+}
+.section__info--destinos--excursiones .section__info--teleferico {
+  background: #f9f9fa;
+  padding: 15px;
+  border-radius: 40px;
+}
+.section__info--destinos--excursiones .section__info--teleferico img {
+  border-radius: 30px;
+}
+.section__info--destinos--excursiones .section__info--bsas {
+  background: #eeeeee;
+  padding: 15px;
+  border-radius: 40px;
+  margin-top: 50px;
+}
+.section__info--destinos--excursiones .section__info--bsas img {
+  border-radius: 30px;
+}
+.section__info--destinos--excursiones .text__section--excursiones {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .section__info--destinos--excursiones section img {
+    display: flex;
+    justify-content: center;
+    width: 28vw;
+  }
+  .section__info--destinos--excursiones section p {
+    width: 23vw;
+    font-size: 0.55rem;
+  }
+  .section__info--destinos--excursiones section h2 {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .section__info--destinos--excursiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+  .section__info--destinos--excursiones section img {
+    width: 65vw;
+  }
+  .section__info--destinos--excursiones section p {
+    width: 65vw;
+    font-size: 0.4rem;
+  }
+  .section__info--destinos--excursiones section h2 {
+    font-size: 0.6rem;
+  }
+  .section__info--destinos--excursiones .section__info--gomon {
+    margin: 0;
+    margin-top: 30px;
+  }
+  .section__info--destinos--excursiones .section__info--teleferico {
+    margin: 0;
+    margin-top: 30px;
+  }
+  .section__info--destinos--excursiones .section__info--bsas {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.section__quienes-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.section__quienes-somos section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+.section__quienes-somos section p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  font-size: 0.85rem;
+  color: #0d6efd;
+}
+.section__quienes-somos .question__1 {
+  background: #f9f9fa;
+  padding: 15px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+.section__quienes-somos .question__2 {
+  background: #f9f9fa;
+  padding: 15px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+.section__quienes-somos .question__3 {
+  background: #f9f9fa;
+  padding: 15px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+.section__quienes-somos .question__4 {
+  background: #f9f9fa;
+  padding: 15px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+.section__quienes-somos .text__section--quienes-somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  .section__quienes-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+  .section__quienes-somos section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 1rem;
+  }
+  .section__quienes-somos section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    font-size: 0.6rem;
+    color: #0d6efd;
   }
 }
 .slider__conteiner {
